@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="execution Order and Include Method">
+	
+		
+	<test name="order of  Test">
+		<!-- to scope parameter to particular test methods under test class -->
+		<parameter name="URL" value="google.con"></parameter>
+		<parameter name="user" value="nithesh"></parameter>
+		
+		<classes>
+			<!-- to scope parameter to particular test method -->
+			 <class name="testNgPractice.ParameterTest" >
+			
+			<methods>
+				<parameter name="dob" value="mar"></parameter>
+				<include name="FillterProduct">
+					
+				</include>
+			</methods>
+			</class>
+	
+			
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite 
+
+
+<groups>
+			<run>
+				<include name="Products"></include>
+				<exclude name="search"></exclude>
+			</run>
+		</groups>-->

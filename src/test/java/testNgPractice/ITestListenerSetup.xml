@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ITestListerner order">
+	<listeners >
+		
+		<listener class-name="testNgPractice.ITestListenerLogic"></listener>
+	</listeners>
+	<test name="ITestListerDemo">
+		
+	
+		
+		<classes>
+			
+			
+			<class name="testNgPractice.ITestListenersDemoTest" >
+			
+			</class>
+		
+			
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [execution Order and Include Method]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="order of  Test(failed)">
+    <parameter name="user" value="nithesh"/>
+    <parameter name="URL" value="google.con"/>
+    <groups>
+      <run>
+        <include name="Products"/>
+        <exclude name="search"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testNgPractice.GroupsTest">
+        <methods>
+          <include name="openUrl"/>
+        </methods>
+      </class> <!-- testNgPractice.GroupsTest -->
+    </classes>
+  </test> <!-- order of  Test(failed) -->
+</suite> <!-- Failed suite [execution Order and Include Method] -->

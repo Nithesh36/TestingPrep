@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="grouping Demo" allow-return-values="true">
+	<test name="group Test">
+		<parameter name="url" value="44"></parameter>
+		<groups>
+			
+			<run>
+				<include name="sanity"></include>
+			
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="sfdc.TestNGGroupsClassLevel" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

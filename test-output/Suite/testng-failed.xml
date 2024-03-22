@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="interviewPrep.TestNgSeries.RetryFailedCaseIAnnotationTransForm"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="interviewPrep.TestNgSeries.RetryTestUsingRetryInterface">
+        <methods>
+          <include name="man2"/>
+        </methods>
+      </class> <!-- interviewPrep.TestNgSeries.RetryTestUsingRetryInterface -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

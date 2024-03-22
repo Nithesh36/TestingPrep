@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Ignoring TestMethods">
+	<test name="disbale all test"  enabled="false" >
+		
+		
+		<classes >
+			<class name="testNgIgnore.DemopTestNg"  />
+		</classes>
+		
+		
+	</test> <!-- Test -->
+	
+	<test name="enable Test Methods">
+		<classes >
+			<class name="testNgIgnore.DemopTestNg2" 
+			>
+			</class> 
+			
+		</classes>
+	</test>
+</suite> <!-- Suite -->

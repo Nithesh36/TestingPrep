@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="execution Order and Include Method">
+	
+	<groups>
+			<run>
+				<include name="Products"></include>
+				<exclude name="search"></exclude>
+			</run>
+		</groups>
+	<!--	<parameter name="URL" value="google.con"></parameter>
+		<parameter name="user" value="nithesh"></parameter> -->	
+	<test name="order of  Test">
+			<parameter name="URL" value="google.con"></parameter>
+		<parameter name="user" value="nithesh"></parameter>
+	
+		<groups>
+			<run>
+				<include name="Products"></include>
+				<exclude name="search"></exclude>
+			</run>
+		</groups>
+		
+		<classes>
+			
+			<class name="testNgPractice.GroupsTest" >
+			
+			</class>
+		
+			
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

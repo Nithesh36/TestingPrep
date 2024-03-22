@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [grouping Demo]" guice-stage="DEVELOPMENT" allow-return-values="true">
+  <test thread-count="5" name="group Test(failed)">
+    <parameter name="url" value="44"/>
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="sfdc.TestNGGroupsClassLevel">
+        <methods>
+          <include name="executeAssert"/>
+        </methods>
+      </class> <!-- sfdc.TestNGGroupsClassLevel -->
+    </classes>
+  </test> <!-- group Test(failed) -->
+</suite> <!-- Failed suite [grouping Demo] -->

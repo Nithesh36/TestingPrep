@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="execution Order and Include Method">
+	<test name="order of  Test">
+		
+	
+		<groups>
+			<dependencies>
+				  <group name="c" depends-on="a  b" />
+
+			</dependencies>
+		</groups>
+		
+		<classes>
+			<class name="testNgPractice.DependOnMEthodTest" >
+			
+			</class>
+		
+			
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
